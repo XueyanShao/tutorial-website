@@ -7,13 +7,48 @@
     <title>My First Web Page</title>
     <!-- Embed Style Method-->
     <style>
+        /* first css rule */
         header {
             background: url(images/central_park.jpg); /*place images as background*/
             height:400px; /*height of the image*/
             background-size: 1500px;
             background-position: 0 -200px; /*can be added after url*/
             background-repeat: no-repeat; /*can be added after url*/
+            padding-top: 100px;
+            padding-left: 100px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
         }
+        /* second css rule */
+        li{
+            list-style-type: none;
+            display: inline;
+            padding: 0 20px;
+        }
+         /* third css rule, contextual selector */
+         nav ul li a{
+             text-decoration: none;
+         }
+         /* Pseudo Clss - to style text links, correspond to the mouse*/
+         a:link{ /* before click */
+            color:#000000;
+         }
+         a:visited{ /* after click */
+            color:#818db3;
+         }
+         a:hover{ /* mouse over */
+            color:#333;
+         }
+         a:active{ /* mouse down */
+            color:#753a30;
+         }
+         /*style the nav box*/
+         nav {
+             background-color: rgb(255,245,238); /*rgba can add transparency*/
+             height: 50px;
+             text-align: center;
+             padding-top: 2px;
+         }
     </style>
 </head>
 <body>
@@ -22,7 +57,7 @@
 <div id="container">
 
     <!-- Brand of Website-->
-    <header>My Website Brand</header>
+    <header style="font-size: 60px; color:#ffffff">My Website Brand</header>
 
     <!-- Main Navigation-->
     <nav>
