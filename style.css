@@ -20,7 +20,7 @@ padding: 0 20px;
 nav ul li a{
     text-decoration: none;
 }
-/* Pseudo Clss - to style text links, correspond to the mouse*/
+/* Pseudo Clss - to style text links, correspond to the mouse, has to be in this order*/
 a:link{ /* before click */
 color:#000000;
 }
@@ -42,7 +42,7 @@ nav {
 }
 /* style the main */
 main{
-    
+    margin: 50px;
 }
 main h1{
     color:rgb(129, 141, 179);
@@ -56,3 +56,47 @@ footer{
     padding-top: 20px;
     color:rgb(211,218,240)
 }
+
+/* page 2 */
+/* style the table */
+table {
+    margin-top: 35px;
+}
+/*use multiple selector to apply same rule to all cells, use comma */
+table, caption, th, td{
+    border:1px solid #000000;
+}
+th, td{
+    width: 150px;
+    height: 35px;
+    text-align: center;
+}
+caption{
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 40px;
+    padding-top: 15px;
+    color: #753a30;
+}
+
+/* page 3 */
+label {
+    display: block;
+    margin: 15px 0 0 0;
+}
+input {
+    width: 300px;
+}
+/* attribute selecter: use [ ] to select attribute without affecting other input elements */
+input[type="radio"]{
+    width: 25px;
+}
+textarea {
+    display: block;
+    width: 300px;
+}
+input[type="submit"], input[type="reset"]{
+    margin: 20px 0 10px 0;
+    width: 100px;
+}
+
