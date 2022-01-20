@@ -1,104 +1,116 @@
 /* first css rule */
 header {
-background: url(images/central_park.jpg); /*place images as background*/
-height:400px; /*height of the image*/
-background-size: 1500px;
-background-position: 0 -200px; /*can be added after url*/
-background-repeat: no-repeat; /*can be added after url*/
-padding-top: 100px;
-padding-left: 100px;
-font-weight: bold;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 60px; 
-color:#ffffff;
+  background: url(images/central_park.jpg); /*place images as background*/
+  height: 400px; /*height of the image*/
+  background-size: 1500px;
+  background-position: 0 -200px; /*can be added after url*/
+  background-repeat: no-repeat; /*can be added after url*/
+  padding-top: 100px;
+  padding-left: 100px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  color: #ffffff;
 }
 /* second css rule */
-li{
-list-style-type: none;
-display: inline;
-padding: 0 20px;
+li {
+  list-style-type: none;
+  display: inline;
+  padding: 0 20px;
 }
 /* third css rule, contextual selector */
-nav ul li a{
-    text-decoration: none;
+nav ul li a {
+  text-decoration: none;
 }
 /* Pseudo Clss - to style text links, correspond to the mouse, has to be in this order*/
-a:link{ /* before click */
-color:#000000;
+a:link {
+  /* before click */
+  color: #000000;
 }
-a:visited{ /* after click */
-color:#818db3;
+a:visited {
+  /* after click */
+  color: #818db3;
 }
-a:hover{ /* mouse over */
-color:#333;
+a:hover {
+  /* mouse over */
+  color: #333;
 }
-a:active{ /* mouse down */
-color:#753a30;
+a:active {
+  /* mouse down */
+  color: #753a30;
 }
 /*style the nav box*/
 nav {
-    background-color: rgb(255,245,238); /*rgba can add transparency*/
-    height: 50px;
-    text-align: center;
-    padding-top: 2px;
+  background-color: rgb(255, 245, 238); /*rgba can add transparency*/
+  height: 50px;
+  text-align: center;
+  padding-top: 2px;
 }
 /* style the main */
-main{
-    margin: 50px;
+main {
+  margin: 50px;
 }
-main h1{
-    color:rgb(129, 141, 179);
-    font-family: Arial, Helvetica, sans-serif;
+main h1 {
+  color: rgb(129, 141, 179);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* style album */
+main #album #photo img {
+  width: ;
 }
 /* style the footer */
-footer{
-    height: 40px;
-    background-color: rgb(129,141,179);
-    text-align: center;
-    padding-top: 20px;
-    color:rgb(211,218,240)
+footer {
+  height: 40px;
+  background-color: rgb(129, 141, 179);
+  text-align: center;
+  padding-top: 20px;
+  color: rgb(211, 218, 240);
 }
 
 /* page 2 */
 /* style the table */
 table {
-    margin-top: 35px;
+  margin-top: 35px;
 }
 /*use multiple selector to apply same rule to all cells, use comma */
-table, caption, th, td{
-    border:1px solid #000000;
+table,
+caption,
+th,
+td {
+  border: 1px solid #000000;
 }
-th, td{
-    width: 150px;
-    height: 35px;
-    text-align: center;
+th,
+td {
+  width: 150px;
+  height: 35px;
+  text-align: center;
 }
-caption{
-    text-transform: uppercase;
-    font-weight: 600;
-    height: 40px;
-    padding-top: 15px;
-    color: #753a30;
+caption {
+  text-transform: uppercase;
+  font-weight: 600;
+  height: 40px;
+  padding-top: 15px;
+  color: #753a30;
 }
 
 /* page 3 */
 label {
-    display: block;
-    margin: 15px 0 0 0;
+  display: block;
+  margin: 15px 0 0 0;
 }
 input {
-    width: 300px;
+  width: 300px;
 }
 /* attribute selecter: use [ ] to select attribute without affecting other input elements */
-input[type="radio"]{
-    width: 25px;
+input[type="radio"] {
+  width: 25px;
 }
 textarea {
-    display: block;
-    width: 300px;
+  display: block;
+  width: 300px;
 }
-input[type="submit"], input[type="reset"]{
-    margin: 20px 0 10px 0;
-    width: 100px;
+input[type="submit"],
+input[type="reset"] {
+  margin: 20px 0 10px 0;
+  width: 100px;
 }
-
