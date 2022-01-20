@@ -56,7 +56,7 @@ main h1 {
 }
 /* style album */
 main #album #photo img {
-  width: ;
+  width: 400px;
 }
 /* style the footer */
 footer {
